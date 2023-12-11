@@ -20,11 +20,11 @@ only to have to ask the host to give you the smartphone so you can add it?
 2. [Link GitHub and Pages](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github) by following the instructions and the select the forked SpotHotPlay repo
 3. On the next site keep everything as it is and hit 'Save and Deploy'
 4. Wait for the success message on the top and copy the url (it should be something like *https://SpotHotPlay-xx.pages.dev/*)
-5. Now [create a new Spotify App](https://developer.spotify.com/dashboard/create) and set the url from 4. as redirect url and append *api/v1/authorize* (e.g. *https://SpotHotPlay-xx.pages.dev/api/v1/authorize*)
+5. Now [create a new Spotify App](https://developer.spotify.com/dashboard/create) and set the url from 4. as redirect url and append */api/v1/authorize* (e.g. *https://SpotHotPlay-xx.pages.dev/api/v1/authorize*)
 6. Go to the settings of the fresh created app (keep the tab open)
 7. [Create a new KV Namespace](https://dash.cloudflare.com/?to=/:account/workers/kv/namespaces) 'SPT_TOKEN'
-8. [Bind the KV](https://dash.cloudflare.com/?to=/:account/pages/view/SpotHotPlay/settings/functions) with Variable name 'SPT_KV' and KV Namespace 'SPT_TOKEN'
-9. Now let's [create the Environment variables:]( https://dash.cloudflare.com/?to=/:account/pages/view/SpotHotPlay/settings/environment-variables)
+8. Bind the KV: Select your Pages project > Settings > Functions > KV namespace bindings > Add binding with Variable name 'SPT_KV' and KV Namespace 'SPT_TOKEN'
+9. Now let's create the (production) Environment variables: Same page > Environment Variables
 
 `SPT_CLIENT_ID`  → Spotify App client id (copy from step 6.)
 
@@ -34,6 +34,7 @@ only to have to ask the host to give you the smartphone so you can add it?
 
 `PARTY_ID` → The name of the party - choose whatever you like. Will be visible to users
 
+10. Authorize the app by opening <your url>*/api/v1/connect* (e.g. *https://SpotHotPlay-xx.pages.dev/api/v1/connect*)
 
 ### How to use as user/party guest
 
