@@ -3,6 +3,8 @@ Have you ever wanted to add a song to the current playlist at a party,
 only to have to ask the host to give you the smartphone so you can add it?
 
 **Not anymore! All the host has to do is share a link and you can add the songs straight away - no account required!**
+![grafik](https://github.com/Jo0001/SpotHotPlay/assets/47455182/34995cef-4d66-4410-8bda-ccb1b880d6ca)
+
 
 > [!NOTE]
 > Still in beta and not yet party battle tested
